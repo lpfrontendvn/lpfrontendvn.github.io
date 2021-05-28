@@ -1,0 +1,33 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+
+@font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("../fonts/#{$file_name}.woff") format("woff");
+    font-weight: #{$weight};
+    font-style: #{$style};
+    }
+    }
+
+@import 'normalize';
+@import 'fonts';
+
+// html{
+//     box-sizing: border-box;
+// }
+// *,
+// *::after,
+// *::before{
+//     box-sizing: inherit;
+// }
+// body{
+//     font-family: 'Arimo', sans-serif;
+//     font-size: 15px;
+// }
+
+// .container{
+//     max-width: 1106px;
+//     margin: 0 auto;
+//     padding: 0 15px;  
+//     min-height: 100%;   
+
