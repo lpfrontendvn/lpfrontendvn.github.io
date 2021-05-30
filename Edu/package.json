@@ -4,11 +4,12 @@
   "description": "моя сборка галп",
   "main": "index.html",
   "dependencies": {
-    "gulp": "^4.0.2"
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "browser-sync": "^2.26.14",
     "del": "^6.0.0",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-clean-css": "^4.3.0",
     "gulp-file-include": "^2.3.0",
