@@ -11,52 +11,14 @@
     <title>Education</title>
 </head>
 <body>
-    <header class="header" style="background-image: url(img/header.jpg);">
-        <div class="container">
-            <div class="header_inner">
-    
-            <a href="#" class="logo">
-            <img src="img/logog.png" alt="Лого компанії" class="logo_link">
-            </a>
-            <span class="logo_title">Education</span>
-            <nav class="menu">
-            <ul class="menu_list">
-                <li class="menu_item"><a href="#" class="menu_list-item">Home</a></li>
-                <li class="menu_item"><a href="#" class="menu_list-item">About us</a></li>
-                <li class="menu_item"><a href="#" class="menu_list-item">Courses</a></li>
-                <li class="menu_item"><a href="#" class="menu_list-item">Programs</a></li>
-                <li class="menu_item"><a href="#" class="menu_list-item">Contact</a></li>
-            </ul>
-            </nav>
-    
+    <div class="wrapper">
+        <div class="content">
+            @@include('_header.html')
+            @@include('_education.html')
             
-            </div>
-
-            <div class="header_slider">
-                <div class="container">
-                    <div class="slider-title">
-                        Knowledge is power
-                    </div>
-                    <div class="slider-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing.
-                    </div>
-                    <button class="slider-btn">Learn more</button>
-                </div>
-            
-                <div class="container">
-                    <div class="slider-title">
-                        Knowledge is power
-                    </div>
-                    <div class="slider-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing.
-                    </div>
-                    <button class="slider-btn">Learn more</button>
-                </div>
-            </div>
-            
-
         </div>
-    </header>
+        @@include('_footer.html')
+    </div>
     
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
