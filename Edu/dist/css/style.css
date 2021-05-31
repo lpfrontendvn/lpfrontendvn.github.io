@@ -793,3 +793,59 @@ a {
   border: none;
   outline: none;
 }
+
+.teachers {
+  background-color: #f1f1f1;
+  padding: 80px 0 115px;
+}
+
+.teachers_title {
+  color: #1a1a1a;
+  margin-bottom: 60px;
+  font-size: 48px;
+  text-align: center;
+}
+
+.teachers_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.teachers_item-inner {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.teachers_item {
+  max-width: 360px;
+  text-align: center;
+  padding: 0 15px 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.teachers_item-images img {
+  width: 97px;
+  height: 97px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0 auto 30px;
+}
+
+.teachers_item-title {
+  margin-bottom: 13px;
+  font-size: 24px;
+  color: #1a1a1a;
+  font-weight: 400;
+}
+
+.teachers_item-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  color: #27ae60;
+}
