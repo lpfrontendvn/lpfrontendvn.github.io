@@ -219,3 +219,45 @@ img{
     left: -15px;
     top: -10px;
 }
+//end education
+//start features
+.features{
+    background-color: #f1f1f1;
+    padding: 85px 0;
+}
+.features_title{
+    color: #1a1a1a;
+    margin-bottom: 64px;
+    font-size: 48px;
+    text-align: center;
+}
+.features_inner{
+    display: flex;
+    justify-content: space-between;
+}
+.features_item{
+    max-width: 315px;
+    text-align: center;
+    padding: 0 40px;
+    &-images{
+        width: 150px;
+        height: 150px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 30px;
+    }
+    &-title{
+        margin-bottom: 33px;
+        font-size: 30px;
+        color: #1a1a1a;
+        font-weight: 400;
+    }
+    &-text{
+        font-family: "Montserrat", sans-serif;
+        font-size: 18px;
+    }
+}
+//end features
