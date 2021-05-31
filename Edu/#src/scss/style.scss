@@ -149,7 +149,7 @@ a{
     align-items: center;
 }
 &_img {
-    background-image: url(../img/edu.png);
+    background-image: url(../img/education/edu.png);
     width: 553px;
     height: 553px;
 }
@@ -185,7 +185,7 @@ img{
 }
 .education_item-learn::before {
     content: '';
-    background-image: url(../img/learn.png);
+    background-image: url(../img/education/learn.png);
     width: 40px;
     height: 40px;
     background-position: left;
@@ -197,7 +197,7 @@ img{
 }
 .education_item-talk::before {
     content: '';
-    background-image: url(../img/talk.png);
+    background-image: url(../img/education/talk.png);
     width: 40px;
     height: 40px;
     background-position: left;
@@ -209,7 +209,7 @@ img{
 }
 .education_item-speak::before {
     content: '';
-    background-image: url(../img/speak.png);
+    background-image: url(../img/education/speak.png);
     width: 40px;
     height: 40px;
     background-position: left;
@@ -373,3 +373,39 @@ img{
         color: #27ae60;
     }
 }
+//end teachers
+//start programs
+.programs{
+    background-color: #fff;
+    padding: 73px 0 94px;
+}
+.programs_title{
+    color: #1a1a1a;
+    margin-bottom: 50px;
+    font-size: 48px;
+    text-align: center;
+}
+.programs_inner{
+    display: flex;
+    justify-content: space-between;
+}
+.programs_item{
+    width: 360px;
+    height: 360px;
+    text-align: center;
+    padding: 0 35px;
+    &-title{
+        margin-top: 130px;
+        margin-bottom: 20px;
+        font-size: 30px;
+        color: #fff;
+        font-weight: 400;
+    }
+    &-text{
+        font-family: "Montserrat", sans-serif;
+        font-size: 18px;
+        color: #fff;
+        margin-bottom: 123px;
+    }
+}
+//end programs
