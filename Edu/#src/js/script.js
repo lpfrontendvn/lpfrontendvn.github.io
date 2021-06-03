@@ -5,5 +5,12 @@ $(function(){
     dots: true
     });
     
-    
+    $('.rewiews_slider').slick({
+        arrows: true,
+        dots: false,
+        centerMode: true,
+        slidesToShow: 3
+        });
+
 });
+

@@ -11,6 +11,7 @@
 
 @import 'normalize';
 @import 'fonts';
+@import '_vars';
 
 html{
     box-sizing: border-box;
@@ -36,7 +37,7 @@ html, body {
 }
 .footer{
     flex: 0 0 auto;
-    background-color: #1a1a1a;
+    background-color: $text;
 }
 a{
     text-decoration: none;
@@ -102,7 +103,7 @@ a{
     margin-bottom: 60px;
 }
 .slider-btn{
-    background-color: #27ae60;
+    background-color: $green;
     border-radius: 35px;
     width: 165px;
     height: 57px;
@@ -118,7 +119,7 @@ a{
         li{
         &.slick-active{
             button{
-            background-color: #27ae60;
+            background-color: $green;
             border: none;
             }
             &:before{
@@ -222,11 +223,11 @@ img{
 //end education
 //start features
 .features{
-    background-color: #f1f1f1;
+    background-color: $bg;
     padding: 85px 0;
 }
 .features_title{
-    color: #1a1a1a;
+    color: $text;
     margin-bottom: 64px;
     font-size: 48px;
     text-align: center;
@@ -252,7 +253,7 @@ img{
     &-title{
         margin-bottom: 33px;
         font-size: 30px;
-        color: #1a1a1a;
+        color: $text;
         font-weight: 400;
     }
     &-text{
@@ -267,7 +268,7 @@ img{
     padding: 80px 0 117px;
 }
 .courses_title{
-    color: #1a1a1a;
+    color: $text;
     margin-bottom: 65px;
     font-size: 48px;
     text-align: center;
@@ -279,7 +280,7 @@ img{
 .courses_item{
     max-width: 360px;
     text-align: center;
-    background-color: #f1f1f1;
+    background-color: $bg;
     &-images{
         height: 245px;
         padding: 0;
@@ -291,7 +292,7 @@ img{
     &-title{
         margin-bottom: 38px;
         font-size: 30px;
-        color: #1a1a1a;
+        color: $text;
         font-weight: 400;
         text-align: left;
         padding-left: 30px;
@@ -320,7 +321,7 @@ img{
         margin-bottom: 27px;
         width: 275px;
         height: 50px;
-        background-color: #27ae60;
+        background-color: $green;
         border-radius: 35px;
         color: #fff;
         font-size: 24px;
@@ -331,11 +332,11 @@ img{
 //end courses
 //start teachers
 .teachers{
-    background-color: #f1f1f1;
+    background-color: $bg;
     padding: 80px 0 115px;
 }
 .teachers_title{
-    color: #1a1a1a;
+    color: $text;
     margin-bottom: 60px;
     font-size: 48px;
     text-align: center;
@@ -364,13 +365,13 @@ img{
     &-title{
         margin-bottom: 13px;
         font-size: 24px;
-        color: #1a1a1a;
+        color: $text;
         font-weight: 400;
     }
     &-text{
         font-family: "Montserrat", sans-serif;
         font-size: 22px;
-        color: #27ae60;
+        color: $green;
     }
 }
 //end teachers
@@ -380,7 +381,7 @@ img{
     padding: 73px 0 94px;
 }
 .programs_title{
-    color: #1a1a1a;
+    color: $text;
     margin-bottom: 50px;
     font-size: 48px;
     text-align: center;
@@ -409,3 +410,176 @@ img{
     }
 }
 //end programs
+//start rewiews
+.rewiews{
+    background-color: $bg;
+    padding: 81px 0;
+}
+.rewiews_title{
+    color: $text;
+    margin-bottom: 58px;
+    font-size: 48px;
+    text-align: center;
+}
+.rewiews_slider{
+    display: flex;
+    justify-content: space-between;
+}
+.rewiews_slider-item{
+    max-width: 555px;
+    text-align: center;
+    padding: 0 40px;
+}
+.rewiews_slider-image{
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 auto 30px;
+    
+    }
+.rewiews_slider-text{
+    margin-bottom: 70px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+}
+.rewiews_slider-name{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.rewiews_slider-job{
+    font-size: 24px;
+}
+.rewiews_slider-item .slick-slide .slick-current .slick-active .slick-center{
+    img{
+        border: 1px solid $green;
+    }
+}
+//end rewiews
+//start feedback
+.feedback{
+    background-color: #fff;
+    padding: 83px 0;
+}
+.feedback_title{
+    color: $text;
+    margin-bottom: 60px;
+    font-size: 48px;
+    text-align: center;
+}
+.feedback_inner{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.feedback_form{
+    width: 555px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-right: 15px;
+    font-size: 18px;
+    input{
+        padding-bottom: 20px;
+        width: 100%;
+        outline: none;
+        border: none;
+        &+input{
+            margin-top: 40px;
+        }
+    }
+    #form{
+        border-bottom: 2px solid #d1d1d1;
+    }
+    #message{
+        border: 2px solid #d1d1d1;
+        padding-left: 20px;
+        height: 187px;
+        padding-top: 20px;
+        margin-top: 45px;
+
+    }
+}
+.feedback_btn{  
+    background-color: $green;
+    border-radius: 35px;
+    width: 165px;
+    height: 65px;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    margin-top: 40px;
+}
+.feedback_contact{
+    display: flex;
+    flex-direction: column;
+}
+.feedback_contact-item{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    margin-top: 77px;
+    a{
+    color: $text;}
+}
+.feedback_map{
+    margin-left: 15px;
+    background-image: url(../img/contact/map.png);
+    width: 555px;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.phone{
+    position: relative;
+    &::before {
+    content: '';
+    background-image: url(../img/contact/tel.png);
+    width: 30px;
+    height: 30px;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -7px;
+    left: -40px;
+}
+}
+.mail {
+    position: relative;
+    &::before{
+    content: '';
+    background-image: url(../img/contact/mail.png);
+    width: 30px;
+    height: 30px;
+    background-position: left;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -7px;
+    left: -40px;
+}}
+//end feedback
+//start footer
+.footer{
+    height: 100px;
+}
+.footer_inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 23px;
+    position: relative;
+}
+.footer_logo_link{
+    width: 40px;
+    height: 32px;
+    margin-left: 15px;
+    color: #27aa5e;
+    position: absolute;
+    left: 15px;
+    top: 34px;
+}

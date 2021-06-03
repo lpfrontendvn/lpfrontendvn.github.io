@@ -892,3 +892,227 @@ a {
   color: #fff;
   margin-bottom: 123px;
 }
+
+.rewiews {
+  background-color: #f1f1f1;
+  padding: 81px 0;
+}
+
+.rewiews_title {
+  color: #1a1a1a;
+  margin-bottom: 58px;
+  font-size: 48px;
+  text-align: center;
+}
+
+.rewiews_slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.rewiews_slider-item {
+  max-width: 555px;
+  text-align: center;
+  padding: 0 40px;
+}
+
+.rewiews_slider-image {
+  width: 120px;
+  height: 120px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0 auto 30px;
+}
+
+.rewiews_slider-text {
+  margin-bottom: 70px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+}
+
+.rewiews_slider-name {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.rewiews_slider-job {
+  font-size: 24px;
+}
+
+.rewiews_slider-item .slick-slide .slick-current .slick-active .slick-center img {
+  border: 1px solid #27ae60;
+}
+
+.feedback {
+  background-color: #fff;
+  padding: 83px 0;
+}
+
+.feedback_title {
+  color: #1a1a1a;
+  margin-bottom: 60px;
+  font-size: 48px;
+  text-align: center;
+}
+
+.feedback_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.feedback_form {
+  width: 555px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-right: 15px;
+  font-size: 18px;
+}
+
+.feedback_form input {
+  padding-bottom: 20px;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+
+.feedback_form input + input {
+  margin-top: 40px;
+}
+
+.feedback_form #form {
+  border-bottom: 2px solid #d1d1d1;
+}
+
+.feedback_form #message {
+  border: 2px solid #d1d1d1;
+  padding-left: 20px;
+  height: 187px;
+  padding-top: 20px;
+  margin-top: 45px;
+}
+
+.feedback_btn {
+  background-color: #27ae60;
+  border-radius: 35px;
+  width: 165px;
+  height: 65px;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  margin-top: 40px;
+}
+
+.feedback_contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.feedback_contact-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  margin-top: 77px;
+}
+
+.feedback_contact-item a {
+  color: #1a1a1a;
+}
+
+.feedback_map {
+  margin-left: 15px;
+  background-image: url(../img/contact/map.png);
+  width: 555px;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.phone {
+  position: relative;
+}
+
+.phone::before {
+  content: '';
+  background-image: url(../img/contact/tel.png);
+  width: 30px;
+  height: 30px;
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -7px;
+  left: -40px;
+}
+
+.mail {
+  position: relative;
+}
+
+.mail::before {
+  content: '';
+  background-image: url(../img/contact/mail.png);
+  width: 30px;
+  height: 30px;
+  background-position: left;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -7px;
+  left: -40px;
+}
+
+.footer {
+  height: 100px;
+}
+
+.footer_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 23px;
+  position: relative;
+}
+
+.footer_logo_link {
+  width: 40px;
+  height: 32px;
+  margin-left: 15px;
+  color: #27aa5e;
+  position: absolute;
+  left: 15px;
+  top: 34px;
+}
