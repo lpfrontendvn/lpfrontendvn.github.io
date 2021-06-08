@@ -9,8 +9,17 @@ $(function(){
         arrows: true,
         dots: false,
         centerMode: true,
-        slidesToShow: 3
+        slidesToShow: 1
+        
+    });
+        $('.menu_btn').on('click', function(){
+            $('.menu_list').toggleClass('menu_list--active');
         });
+
+        // $('.courses_inner-slider').slick({
+        //     arrows: false,
+        //     dots: true
+        //     });
 
 });
 
