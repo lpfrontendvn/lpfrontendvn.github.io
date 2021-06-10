@@ -83,6 +83,7 @@ a{
     text-transform: uppercase;
     color: #fff;
     font-size: 24px;
+    // display: inline-block;
 }
 .menu_list {
     display: flex;
@@ -473,7 +474,7 @@ a{
     
 }
 .feedback_form{
-    width: 555px;
+    width: 50%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -515,6 +516,7 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    width: 50%;
 }
 .feedback_contact-item{
     display: flex;
@@ -530,7 +532,6 @@ a{
 .feedback_map{
     margin-left: 15px;
     background-image: url(../img/contact/map.png);
-    width: 555px;
     height: 300px;
     background-position: center;
     background-size: cover;
@@ -587,6 +588,9 @@ a{
     left: 15px;
     top: 34px;
 }
+.footer .logo_title {
+    font-size: 24px;
+}
 .menu_btn{
     display: none;
 }
@@ -617,7 +621,6 @@ a{
 .footer .menu_list {
     margin-left: 240px;}
 }
-
 @media (max-width: 1095px) {
     .menu_list {
         margin-left: 235px;}
@@ -857,9 +860,6 @@ a{
         width: 250px;
         height: 250px;
     }
-    .feedback_map {
-        width: 490px;
-        height: 285px;}
     .footer .menu_list {
         margin-left: 165px;
     }
@@ -930,6 +930,8 @@ a{
     .programs {
         padding: 40px 0 70px;
     }
+    .feedback_map {
+        height: 250px;}
     .footer .menu_list {
         margin-left: 130px;
     }
@@ -978,9 +980,6 @@ a{
         height: 200px;}
 }
 @media (max-width: 820px){
-.feedback_map {
-    width: 430px;
-    height: 275px;}
 .footer .menu_list {
     margin-left: 100px;
 }
@@ -1097,10 +1096,6 @@ a{
         padding-bottom: 10px;}
     .feedback_form #message {
         padding: 15px 0 0 15px;}
-    .feedback_map {
-        width: 400px;
-        height: 270px;
-    }
     .feedback_contact-item{
         font-size: 15px;
         padding-left: 95px;
@@ -1203,26 +1198,43 @@ a{
         align-items: center;
     }
     .feedback_title {
-        margin-bottom: 5px;
+        margin-bottom: 20px;
     }
     .feedback_form {
         align-items: center;
     }
+    .feedback_map {
+        display: none;
+    }
     .feedback_form #message {
-        width: 555px;
+        width: 100%;
     }
     .feedback_contact-item {
-        margin-top: 25px;
-        margin-bottom: 50px;
+        padding: 0;
+        margin: 25px 0 50px 60px;
     }
     .footer_logo_link {
-        left: 250px;
+        left: 230px;
     }
+    
 }
 @media (max-width: 710px) {
 .footer_logo_link {
     left: 230px;}
 }
+@media (max-width: 660px){
+
+    
+    .feedback_form {
+        width: auto;
+    }
+    .feedback_contact {
+        width: auto;
+    }
+    .feedback_contact-item {
+        margin: 25px 0 50px 40px;
+    }
+}   
 @media (max-width: 650px) {
     .slider-title {
         font-size: 42px;
@@ -1254,11 +1266,6 @@ a{
     .rewiews_slider-name,
     .rewiews_slider-job {
         display: none;}
-    .feedback_form {
-        width: 360px;}
-    .feedback_form #message {
-        width: 360px;
-    }
     .feedback_btn {
         width: 155px;}
 }
@@ -1286,18 +1293,85 @@ a{
     .education_img {
         height: 430px;
     }
-    .rewiews {display: none;}
+    .courses{
+        display: none;}
+    .courses_double{
+        display: block;
+        background-color: #fff;
+        padding: 80px 0 117px;
+            
+        }
+        .courses_title{
+            margin-bottom: 65px;
+        }
+        .courses_inner{
+            display: flex;
+            justify-content: space-between;
+        }
+        .courses_item{
+            max-width: 360px;
+            text-align: center;
+            background-color: $bg;
+            &-images{
+                height: 245px;
+                padding: 0;
+                margin-bottom: 40px;
+                background-position: top center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            &-title{
+                margin-bottom: 38px;
+                font-size: 30px;
+                color: $text;
+                font-weight: 400;
+                text-align: left;
+                padding-left: 30px;
+            }
+            &-text{
+                font-family: "Montserrat", sans-serif;
+                font-size: 18px;
+                text-align: left;
+                color: #484848;
+                border-bottom: 1px solid #cfcfcf;
+                padding-bottom: 30px;
+                padding-left: 30px;
+                padding-right: 50px;
+            }
+            &-time{
+                font-size: 24px;
+                padding-bottom: 20px;
+                padding-top: 30px;
+                border-bottom: 1px solid #cfcfcf;
+                text-align: center;
+                width: 235px;
+                display: inline-block;
+            }
+            &-btn{
+                margin-top: 50px;
+                margin-bottom: 27px;
+                width: 275px;
+                height: 50px;
+                background-color: $green;
+                border-radius: 35px;
+                color: #fff;
+                font-size: 24px;
+                border: none;
+                outline: none;
+            }
+        }
+    .rewiews {
+        display: none;
+    }
     .features_item-images {
         width: 140px;
         height: 140px;
     }
 }
+
 @media (max-width: 460px) {
     .slider-btn {
         margin-bottom: 175px;
-    }
-    .feedback_map {
-        margin-left: 0;
     }
 }
 @media (max-width: 435px) {
@@ -1384,9 +1458,6 @@ a{
     .feedback_title {
         margin-bottom: 20px;
     }
-    .feedback_map {
-        height: 250px;
-    }
     .feedback_contact-item {
         margin-bottom: 40px;
     }
@@ -1394,4 +1465,7 @@ a{
         height: 115px;
     }
 }
-
+@media (max-width: 350px){
+.feedback_contact-item {
+    margin: 25px 0 50px 20px;}
+}
