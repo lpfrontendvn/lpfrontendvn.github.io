@@ -579,34 +579,11 @@ a{
     padding-top: 23px;
     position: relative;
 }
-.footer_logo_link{
-    width: 40px;
-    height: 32px;
-    margin-left: 15px;
-    color: #27aa5e;
-    position: absolute;
-    left: 15px;
-    top: 34px;
-}
-.footer .logo_title {
-    font-size: 24px;
-}
 .menu_btn{
     display: none;
 }
 .courses_double {
     display: none;
-}
-@media (max-width: 1150px) {
-    .footer_logo_link {
-        left: 5px;}
-}
-@media (max-width: 1130px) {
-    .footer{
-        .menu_list{
-            margin-left: 270px;
-        }
-    }
 }
 @media (max-width: 1125px){
     .courses_item {
@@ -616,10 +593,6 @@ a{
         width: 350px;
         height: 350px;
     }
-}
-@media (max-width: 1100px){
-.footer .menu_list {
-    margin-left: 240px;}
 }
 @media (max-width: 1095px) {
     .menu_list {
@@ -643,10 +616,6 @@ a{
         height: 335px;
     }
 }
-@media (max-width: 1070px){
-    .footer .menu_list {
-        margin-left: 230px;}
-    }
 @media (max-width: 1050px){
     .container{
         padding: 0 25px;
@@ -809,9 +778,6 @@ a{
     .footer .menu_list {
         margin-left: 220px;
     }
-    .footer_logo_link {
-        top: 27px;
-    }
 }
 @media (max-width: 940px){
     .menu_list {
@@ -827,25 +793,16 @@ a{
     .features_item-text {
         font-size: 14px;
     }
-    .footer .menu_list {
-        margin-left: 205px;
-    }
 }
 @media (max-width: 920px){
     .programs_item {
         width: 270px;
         height: 270px;
     }
-    .footer .menu_list {
-        margin-left: 195px;
-    }
 }
 @media (max-width: 910px){
     .courses_item {
         max-width: 270px;}
-    .footer .menu_list {
-        margin-left: 175px;
-    }
 }
 @media (max-width: 895px){
     .menu_list {
@@ -859,9 +816,6 @@ a{
     .programs_item {
         width: 250px;
         height: 250px;
-    }
-    .footer .menu_list {
-        margin-left: 165px;
     }
 }
 @media (max-width: 875px){
@@ -978,11 +932,6 @@ a{
     }
     .courses_item-images {
         height: 200px;}
-}
-@media (max-width: 820px){
-.footer .menu_list {
-    margin-left: 100px;
-}
 }
 @media (max-width: 800px){
     .header_inner{
@@ -1117,20 +1066,12 @@ a{
     }}
     .footer {
         .menu{
-        display: none;
-    }
+            display: none;
+        }
     }
     .footer_inner {
-        padding-top: 45px;
+        padding-top: 32px;
     }
-    .footer_logo_link {
-        top: 41px;
-        left: 277px;
-    }
-}
-@media (max-width: 770px){
-.footer_logo_link {
-    left: 260px;}
 }
 @media (max-width: 760px){
 .courses_item {
@@ -1213,18 +1154,8 @@ a{
         padding: 0;
         margin: 25px 0 50px 60px;
     }
-    .footer_logo_link {
-        left: 230px;
     }
-    
-}
-@media (max-width: 710px) {
-.footer_logo_link {
-    left: 230px;}
-}
 @media (max-width: 660px){
-
-    
     .feedback_form {
         width: auto;
     }
@@ -1283,6 +1214,12 @@ a{
     }
     .header_slider {
         margin-top: 145px;
+            
+    }
+    .header_slider{
+        #slick-slide-control00, #slick-slide-control01{
+            display: none;
+        }
     }
     .slider-title {
         font-size: 40px;
@@ -1291,27 +1228,26 @@ a{
         margin-bottom: 210px;
     }
     .education_img {
-        height: 430px;
+        height: 330px;
     }
     .courses{
         display: none;}
     .courses_double{
         display: block;
         background-color: #fff;
-        padding: 80px 0 117px;
+        padding: 0;
             
         }
-        .courses_title{
-            margin-bottom: 65px;
-        }
-        .courses_inner{
-            display: flex;
-            justify-content: space-between;
-        }
-        .courses_item{
-            max-width: 360px;
+    .container{
+        max-width: 360px;
+    }
+    .courses_title{
+        margin-bottom: 30px;
+    }
+    .courses_item{
             text-align: center;
             background-color: $bg;
+            margin-right: 0;
             &-images{
                 height: 245px;
                 padding: 0;
@@ -1321,8 +1257,8 @@ a{
                 background-repeat: no-repeat;
             }
             &-title{
-                margin-bottom: 38px;
-                font-size: 30px;
+                margin-bottom: 27px;
+                font-size: 24px;
                 color: $text;
                 font-weight: 400;
                 text-align: left;
@@ -1330,7 +1266,7 @@ a{
             }
             &-text{
                 font-family: "Montserrat", sans-serif;
-                font-size: 18px;
+                font-size: 14px;
                 text-align: left;
                 color: #484848;
                 border-bottom: 1px solid #cfcfcf;
@@ -1339,7 +1275,7 @@ a{
                 padding-right: 50px;
             }
             &-time{
-                font-size: 24px;
+                font-size: 20px;
                 padding-bottom: 20px;
                 padding-top: 30px;
                 border-bottom: 1px solid #cfcfcf;
@@ -1348,17 +1284,20 @@ a{
                 display: inline-block;
             }
             &-btn{
-                margin-top: 50px;
+                margin-top: 40px;
                 margin-bottom: 27px;
-                width: 275px;
+                width: 240px;
                 height: 50px;
                 background-color: $green;
                 border-radius: 35px;
                 color: #fff;
-                font-size: 24px;
+                font-size: 18px;
                 border: none;
                 outline: none;
             }
+        }
+        #slick-slide-control20, #slick-slide-control21, #slick-slide-control22 {
+            display: none;
         }
     .rewiews {
         display: none;
@@ -1368,7 +1307,6 @@ a{
         height: 140px;
     }
 }
-
 @media (max-width: 460px) {
     .slider-btn {
         margin-bottom: 175px;
@@ -1377,11 +1315,6 @@ a{
 @media (max-width: 435px) {
     .logo_link {
         top: -10px;
-    }
-    .header_slider .slick-dots li button {
-        border: 2px solid #fff;
-        width: 15px;
-        height: 15px;
     }
     .education_img {
         width: 370px;
@@ -1459,8 +1392,9 @@ a{
         margin-bottom: 20px;
     }
     .feedback_contact-item {
-        margin-bottom: 40px;
+        margin: 25px 0 40px 15px;
     }
+    
     .feedback_form #message {
         height: 115px;
     }
