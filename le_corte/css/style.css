@@ -875,6 +875,7 @@ img {
 }
 
 .feedback__btn_send {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
