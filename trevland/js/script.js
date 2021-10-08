@@ -8,7 +8,7 @@ $(function(){
         arrows: false,
         dots: true,
         slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToScroll: 1,
         variableWidth: true,
         
         responsive: [
@@ -22,7 +22,6 @@ $(function(){
                 breakpoint: 566,
                 settings: {
                   slidesToShow: 2,
-                  slidesToScroll: 2,
                   centerMode: true,
                   swipe: true,
                 }
