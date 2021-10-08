@@ -1087,6 +1087,12 @@ img {
   }
 }
 
+@media (max-width: 766px) and (max-width: 300px) {
+  .header .menu {
+    margin: 20px;
+  }
+}
+
 @media (max-width: 766px) and (max-width: 410px) {
   .header .menu__list {
     padding: 0;
@@ -1240,5 +1246,21 @@ img {
 
   .footer__feedback_btn {
     padding: 10px 32px;
+  }
+}
+
+@media (max-width: 316px) {
+  .footer__feedback_email {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 300px) {
+  .header__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }

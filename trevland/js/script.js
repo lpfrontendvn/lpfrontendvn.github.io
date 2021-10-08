@@ -12,12 +12,6 @@ $(function(){
         variableWidth: true,
         
         responsive: [
-            {
-              breakpoint: 1107,
-              settings: {
-                slidesToShow: 4,
-              }
-            },
               {
                 breakpoint: 566,
                 settings: {
