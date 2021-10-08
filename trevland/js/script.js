@@ -22,6 +22,7 @@ $(function(){
                 breakpoint: 566,
                 settings: {
                   slidesToShow: 2,
+                  slidesToScroll: 2,
                   centerMode: true,
                   swipe: true,
                 }
@@ -29,13 +30,15 @@ $(function(){
               {
                 breakpoint: 460,
                 settings: {
-                  slidesToShow: 1,  
+                  slidesToShow: 1,
+                  slidesToScroll: 1,  
                 }
               },
               {
                 breakpoint: 425,
                 settings: {
                   slidesToShow: 1,
+                  slidesToScroll: 1,
                   variableWidth: false,
                   
                 }
